@@ -76,8 +76,3 @@ video{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
   opacity: 0.9;
 }
-
-@media only screen and (max-width: 767px) {
-  width: 90%; /* Ancho del 90% en dispositivos móviles */
-  margin: 0 auto; /* Centra el componente horizontalmente */
-}
