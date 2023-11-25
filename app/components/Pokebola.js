@@ -20,7 +20,7 @@ export default function Pokebola() {
         // Muestra la invitación después de 10 segundos
         const invitationTimeout = setTimeout(() => {
             setShowInvitation(true);
-        }, 10000);
+        }, 15000);
 
         return () => clearTimeout(invitationTimeout);
     }, []); // Se ejecutará una vez al montar el componente
