@@ -1,26 +1,41 @@
 "use client"
 
-import PokeBolaImg from "./PokeBolaImg"
-import { useState } from "react"
+
+import React, { useState, useEffect } from "react";
+import Invitation from "./Invitation";
+import PokeBolaImg from "./PokeBolaImg";
 
 export default function Pokebola() {
-    const [nvgt, setNvgt] = useState(0)
+    const [nvgt, setNvgt] = useState(false);
+    const [showInvitation, setShowInvitation] = useState(false);
 
-    const handleNvgt = () =>{
-        setNvgt(nvgt+1)
-        console.log("tratata")
-    }
+    const handleNvgt = () => {
+        // Agrega un retraso de 2 segundos antes de cambiar el estado
+        setTimeout(() => {
+            setNvgt(true);
+        }, 2000);
+    };
+
+    useEffect(() => {
+        // Muestra la invitación después de 10 segundos
+        const invitationTimeout = setTimeout(() => {
+            setShowInvitation(true);
+        }, 10000);
+
+        return () => clearTimeout(invitationTimeout);
+    }, []); // Se ejecutará una vez al montar el componente
 
     return (
-
         <div className="PokebolaContainer">
-            {nvgt ==0?
-            <PokeBolaImg
-            handleNvgt={handleNvgt}
-            />
-            :
-            <h2>hola</h2>
-            }
+            {!nvgt ? (
+                <PokeBolaImg
+                    handleNvgt={() => {
+                        handleNvgt();
+                    }}
+                />
+            ) : showInvitation ? (
+                <Invitation />
+            ) : null}
         </div>
-    )
+    );
 }

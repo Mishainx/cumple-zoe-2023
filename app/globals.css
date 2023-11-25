@@ -43,6 +43,7 @@ video{
 .pokebolaImg{
   animation: pulse 2s ease-in-out infinite, intermittent-pulse 5s infinite;
   cursor: pointer;
+  transition: opacity 2s ease-in-out; /* Transición de 2 segundos para la opacidad */
 }
 
 @keyframes pulse {
@@ -62,7 +63,5 @@ video{
 }
 
 .fade-out {
-  opacity: 0;
-  pointer-events: none; /* Evitar eventos mientras está invisible */
-  transition: opacity 0.5s ease-in-out;
+  opacity: 0; /* Opacidad final para el fade out */
 }
