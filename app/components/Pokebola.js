@@ -33,7 +33,7 @@ export default function Pokebola() {
                         handleNvgt();
                     }}
                 />
-            ) : showInvitation ? (
+            ) : !showInvitation ? (
                 <Invitation />
             ) : null}
         </div>
