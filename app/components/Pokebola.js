@@ -34,7 +34,7 @@ export default function Pokebola() {
                     }}
                 />
             ) : showInvitation ? (
-                <Invitation />
+                <Invitation/>
             ) : null}
         </div>
     );
