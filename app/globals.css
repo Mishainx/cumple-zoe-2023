@@ -34,13 +34,15 @@ video{
   max-height: 100vh;
 }
 
-.pokebola {
+.PokebolaContainer {
   position: relative;
-  cursor: pointer;
-  background: transparent;
   top: -10px;
   z-index: 3;
+}
+
+.pokebolaImg{
   animation: pulse 2s ease-in-out infinite, intermittent-pulse 5s infinite;
+  cursor: pointer;
 }
 
 @keyframes pulse {
@@ -53,3 +55,14 @@ video{
   }
 }
 
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  pointer-events: none; /* Evitar eventos mientras está invisible */
+  transition: opacity 0.5s ease-in-out;
+}

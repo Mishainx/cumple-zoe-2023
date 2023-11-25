@@ -1,16 +1,26 @@
-import Image from "next/image"
+"use client"
+
+import PokeBolaImg from "./PokeBolaImg"
+import { useState } from "react"
 
 export default function Pokebola() {
+    const [nvgt, setNvgt] = useState(0)
+
+    const handleNvgt = () =>{
+        setNvgt(nvgt+1)
+        console.log("tratata")
+    }
+
     return (
-        <>
-        <div class="status__icon"></div>
-        <div className="pokebola">
-            <Image
-            src={"/pokebola.png"}
-            width={50}
-            height={50}
-            ></Image>
+
+        <div className="PokebolaContainer">
+            {nvgt ==0?
+            <PokeBolaImg
+            handleNvgt={handleNvgt}
+            />
+            :
+            <h2>hola</h2>
+            }
         </div>
-        </>
     )
 }
