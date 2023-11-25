@@ -65,14 +65,3 @@ video{
 .fade-out {
   opacity: 0; /* Opacidad final para el fade out */
 }
-
-.Invitation {
-  max-width: 500px;
-  margin: 0 auto; /* Centra el componente horizontalmente */
-  padding: 20px; /* Añade algún espacio alrededor del contenido */
-  background-color: #ffffff; /* Color de fondo */
-  border: 2px solid #ccc; /* Borde */
-  border-radius: 8px; /* Borde redondeado */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-  opacity: 0.9;
-}
