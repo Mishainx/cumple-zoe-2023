@@ -2,7 +2,7 @@ export default function Invitation() {
 
     return (
         <div className={`Invitation`}>
-            Holaa
+            <p>Hola, ¡te invitamos a la fiesta de cumpleaños!</p>
         </div>
     );
 }
