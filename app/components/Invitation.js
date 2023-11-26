@@ -7,9 +7,9 @@ export default function Invitation() {
 
       <Image
         src="/text/text-unique.png"
-        width={250}
-        height={250}
-        layout="fixed"
+        width={400}
+        height={400}
+        layout='fixed'
       >
       </Image>
     </div>
