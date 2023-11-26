@@ -3,5 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    animation: fadeIn 1s ease-in-out forwards;
+    overflow: hidden; /* Agrega la animación de fade in */
   }
+
+.nameContainer{
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Comienza con opacidad 0 */
+  }
+  to {
+    opacity: 1; /* Termina con opacidad 1 */
+  }
+}
