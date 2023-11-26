@@ -1,6 +1,7 @@
 .invitationContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajusta la altura según tus necesidades */
+    height: 100vh;
   }

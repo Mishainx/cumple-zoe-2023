@@ -3,14 +3,8 @@ import Image from 'next/image';
 
 export default function Card() {
   return (
-    <div>
-      <Image
-        src="/text/text-1.png"
-        width={500}
-        height={500}
-      >
+    <div className={styles.cardContainer}>
 
-      </Image>
     </div>
   );
 }
