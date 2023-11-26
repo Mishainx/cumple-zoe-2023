@@ -8,14 +8,14 @@ export default function Invitation() {
       <Image
         src="/text/zoe-text.png"
         width={150}
-        height={100}
+        height={25}
         layout="fixed"
       >
       </Image>
       <Image
         src="/text/text-6.png"
         width={100}
-        height={100}
+        height={25}
         layout="fixed"
       >
       </Image>
@@ -23,9 +23,9 @@ export default function Invitation() {
 
       <Image
         src="/text/text-1.png"
-        width={500}
-        height={500}
-        layout="fixed"
+        width={250}
+        height={250}
+        layout="responsive"
       >
       </Image>
     </div>
