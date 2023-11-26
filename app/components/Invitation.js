@@ -9,14 +9,14 @@ export default function Invitation() {
         src="/text/zoe-text.png"
         width={150}
         height={25}
-        layout="fixed"
+        layout="responsive"
       >
       </Image>
       <Image
         src="/text/text-6.png"
         width={100}
         height={25}
-        layout="fixed"
+        layout="responsive"
       >
       </Image>
       </div>

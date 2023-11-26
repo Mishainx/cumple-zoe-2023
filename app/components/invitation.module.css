@@ -1,10 +1,8 @@
 .invitationContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     animation: fadeIn 1s ease-in-out forwards;
-    overflow: hidden; /* Agrega la animación de fade in */
   }
 
 .nameContainer{
