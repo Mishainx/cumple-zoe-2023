@@ -9,7 +9,7 @@ export default function Invitation() {
         src="/text/text-unique.png"
         width={250}
         height={250}
-        layout="responsive"
+        layout="fixed"
       >
       </Image>
     </div>
